@@ -1,0 +1,90 @@
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 500px;
+  box-shadow: 3px 3px 15px;
+}
+
+.header {
+  background-color: #EB4A4E;
+  color: white;
+  padding: 20px 20px;
+  font-size: 18px;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body {
+  font-size: 16px;
+  font-weight: 200;
+  display: flex;
+}
+.body img {
+  width: 100px;
+  height: 100px;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .copyCode {
+  padding-top: 20px;
+  font-weight: 600;
+}
+.content .discountCode {
+  background-color: #EB4A4E;
+  color: white;
+  width: fit-content;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 1px solid #DADADA;
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 3px 3px 15px #DADADA;
+}
+.btn-primary {
+  transition: all 0.3s;
+  background-color: #EB4A4E;
+  color: white;
+}
+.btn-primary:hover {
+  transform: translate(3px, -3px);
+}
+.btn-secondary {
+  transition: all 1s;
+  background-color: white;
+  color: #EB4A4E;
+  border: 2px solid #EB4A4E;
+}
+.btn-secondary:hover {
+  transform: translate(-3px, -3px);
+}
+
+/*# sourceMappingURL=first-with-mixin.css.map */

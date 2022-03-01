@@ -1,0 +1,94 @@
+$primary-color: #EB4A4E;
+$secondary-color: white;
+$border-color: #DADADA;
+
+$font-size-small: 12px;
+$font-size-normal: 16px;
+$font-size-big: 18px;
+$font-size-huge: 20px;
+
+body {
+  font-family: "Roboto",sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 500px;
+  box-shadow: 3px 3px 15px;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 20px;
+  font-size: $font-size-big;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body {
+  font-size: $font-size-normal;
+  font-weight: 200;
+  display: flex;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .copyCode {
+    padding-top: 20px;
+    font-weight: 600;
+  }
+
+  .discountCode {
+    background-color: $primary-color;
+    color: $secondary-color;
+    width: fit-content;
+    padding: 5px;
+    font-size: $font-size-huge;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 1px solid $border-color;
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-small;
+
+  &:hover {
+    box-shadow: 3px 3px 15px $border-color;
+  }
+
+  &-primary {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+}
